@@ -1,0 +1,13 @@
+.mainWrapper {
+    display: flex;
+}
+.rightWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightBottomWrapper {
+    display: flex;
+    align-items: center;
+    flex: 1, 1;
+}

@@ -1,0 +1,145 @@
+.chooseList {
+    background-color: #12161d;
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.chooseList::-webkit-scrollbar {
+    display: none;
+}
+.chooseList span {
+    padding: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    white-space: nowrap;
+}
+.chooseList .active {
+    color: #fff;
+    border-bottom: 2.5px solid #1677FF;
+}
+.chooseList .default {
+    color: hsla(0, 0%, 100%, .6);
+}
+/* 2 ND DIV */
+.main {
+    background-color: #0E1117;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0 19px 50px 19px;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #1677FF #0E1117;
+}
+.main::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.main::-webkit-scrollbar-track {
+    background: #0E1117;
+}
+.main::-webkit-scrollbar-thumb {
+    background-color: #1677FF;
+    border-radius: 4px;
+}
+/* Search */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    background-color: #0E1117;
+    z-index: 1;
+}
+.search input {
+    background: #12161d;
+    border: 1px solid #2a2f3a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #7187a1;
+    padding: 12px 17px;
+    border-radius: 13.5px;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+.search input:focus {
+    outline: none;
+    border-color: #1677FF;
+}
+.search input::placeholder {
+    color: #7187a1;
+}
+.search button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    background-color: #3bbf39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search button:hover {
+    background-color: #45d943;
+}
+/* Table */
+.studentTable {
+    background: #12161d;
+    color: #fff;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border-radius: 13px;
+}
+.studentTable thead {
+    background-color: #1a1f2a;
+    position: sticky;
+    top: 78px;
+    z-index: 1;
+}
+.tableHeader {
+    color: #7187a1;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.tableRow {
+    transition: background-color 0.3s ease;
+}
+.tableRow:hover {
+    background-color: #1a1f2a;
+}
+.tableCell {
+    padding: 15px;
+    border-top: 1px solid #2a2f3a;
+    border-bottom: 1px solid #2a2f3a;
+}
+.tableCell img {
+    border-radius: 27.5px;
+}
+.editStudent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+}
+.editStudent img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.editStudent img:hover {
+    opacity: 0.7;
+}
